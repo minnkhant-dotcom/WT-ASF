@@ -2,6 +2,12 @@
     display: none;
 }
 
+/*
+colors:
+#df2935
+#ffcc00
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -11,13 +17,19 @@
     font-family: alice;
     src: url(../fonts/alice.ttf);
 }
+@font-face {
+    font-family: figtree;
+    src: url(../fonts/figtree.ttf);
+}
 
 p {
     display: inline-block;
     font-family: 'alice', serif;
-    color: #ffcc00;
-    transition: color 0.2s;
+    color: #eefff4;
+    transition: color 0.2s, font-size 0.2s;
 }
+.slogo {font-size: 12px;}
+.blogo {font-size: 32px; text-align: center; font-weight: 1000;}
 
 .logo{
     display: flex;
@@ -27,75 +39,75 @@ p {
     flex-direction: column;
     justify-content: space-between;
     width: 149.87px;
+    height: 64.5px;
+    transition: padding 0.2s;
 }
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #003400;
-    transition: background-color 0.2s;
-    transition: padding 0.2s;
-    height: 12vh;
+    background-color: #30011e;
+    transition: background 0.2s;
+    transition: height 0.2s;
+    height: 90px;
+    border-radius: 0px 0px 30px 30px;
 }
 
 header:hover {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #eefff4;
-    padding-bottom: 20vh;
+    background: url("../images/tiger.jpg") center;
+    background-size: cover;
+    height: 50vh;
 
-    p {
-        display: inline-block;
-        font-family: 'alice', serif;
-        color: #30011e;
+    p,.slogo,.blogo {font-size: 30px;color: #eefff4;}
+    .logo{
+        width: 200px;
+        height: 100px;
+        padding-top: 13vh;
+        padding-left: 9vw;
+    }
+    
+    nav {
+        height: 100%;
     }
 
-    li {
-        display: inline-block;
-        font-family: "alice", serif;
-        font-size: 20px;
-        color: #30011e;
-        margin: 19px;
-        padding: 15px;
-        border-radius: 20px;
-        /*border: solid 2px #eefff4;*/
-    }
+    .menu {color: #eefff4;font-weight: 700;}
 
-    li:hover {
+    .menu:hover {
         cursor: pointer;
-        display: inline-block;
-        font-family: "alice", serif;
-        font-size: 20px;
-        color: #eefff4;
-        background-color: #DF2935;
-        margin: 17px;
-        padding: 20px;
-        border: solid 2px #DF2935;
+        text-decoration: underline;
         border-radius: 30px;
+        
+        .dropdown {
+            display: block;
+        }
+        
     }
 }
 
 nav {
     display: flex;
-    align-items: center;
+    align-items: start;
+    margin-top: 11px;
     margin-right: 7vw;
 }
 
-li {
+.menu {
     display: inline-block;
-    font-family: "alice", serif;
+    text-decoration: none;
+    align-items: center;
+    font-family: "figtree", sans-serif;
     font-size: 20px;
-    color: #ffcc00;
-    margin: 19px;
-    padding: 15px;
-    /*border: solid 2px #003400;
-    border-radius: 20px;*/
-    transition: color 0.2s, padding 0.2s, border-radius 0.2s, background-color 0.2s, border 0.2s;
+    color: #eefff4;
+    margin: 20px;
+    transition: 0.2s;
 }
 
 
 body {
-    background-color: #ffcc00;
+    background-color: #eefff4;
+}
+
+.dropdown {
+    display: none;
 }
