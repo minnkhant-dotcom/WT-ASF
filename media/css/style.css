@@ -1,6 +1,6 @@
-*::-webkit-scrollbar{
+/**::-webkit-scrollbar{
     display: none;
-}
+}*/
 
 /*
 colors:
@@ -22,10 +22,6 @@ colors:
     src: url(../fonts/figtree.ttf);
 }
 
-
-
-
-
 .slogo,.blogo {
     display: inline-block;
     font-family: 'alice', serif;
@@ -34,17 +30,44 @@ colors:
 }
 .slogo {font-size: 12px;}
 .blogo {font-size: 32px; text-align: center; font-weight: 1000;}
-.logo {
+#logo {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     width: 149.87px;
     height: 64.5px;
-    margin: 13px 0px 13px 7vw;
     justify-content: space-between;
     text-decoration: none;
-    transition: padding 0.2s;
+    transition: 0.2s;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: calc(100% - 80px);
+    background-color: #30011e;
+    justify-content: space-between;
+    transition: 0.2s;
+    padding: 20px 40px 20px 40px;
+    border-radius: 0px 0px 30px 30px;
+    position: fixed;
+}
+.header-scrolled {
+    background: url("../images/tiger.jpg") center;
+    background-size: cover;
+    height: 70vh;
+}
+.logo-scrolled {
+    padding: 13vh 0 0 8vw;
+}
+body {
+    height: 1000px;
+}
+
+
+
+/*
 header {
     display: flex;
     flex-direction: row;
@@ -167,3 +190,4 @@ body {
         color: #eefff4;
     }
 }
+*/
