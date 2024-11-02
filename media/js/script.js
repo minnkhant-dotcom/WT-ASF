@@ -1,12 +1,18 @@
+function navButton() {
+  let x = document.getElementById("navBar");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
 window.addEventListener('scroll', () => {
-    const header = document.getElementById('scroll-header');
-    const logo = document.getElementById('logo');
-    if (window.scrollY < 5) { // Adjust scroll distance as needed
+  const header = document.querySelector('header');
+  if (window.scrollY > 0) {
       header.classList.add('header-scrolled');
-      logo.classList.add('logo-scrolled');
-    } else {
+  } else {
       header.classList.remove('header-scrolled');
-      logo.classList.remove('logo-scrolled');
-    }
-  });
-  
+  }
+});

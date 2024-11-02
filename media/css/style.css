@@ -1,6 +1,6 @@
-/**::-webkit-scrollbar{
+*::-webkit-scrollbar{
     display: none;
-}*/
+}
 
 /*
 colors:
@@ -11,7 +11,7 @@ colors:
 * {
     margin: 0;
     padding: 0;
-}
+} 
 
 @font-face {
     font-family: alice;
@@ -22,6 +22,49 @@ colors:
     src: url(../fonts/figtree.ttf);
 }
 
+header {
+    display: flex;
+    position: fixed;
+
+    flex-direction: column;
+    align-items: center;
+
+    height: 70vh;
+    width: 100%;
+    padding: 5vh 0 0 0;
+
+    background: url("../images/orangutan.jpg") center;
+    background-size: cover;
+}
+
+/* logo */
+.logo{
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s;
+    font-family: 'alice', serif;
+    color: #eefff4;
+}
+.logo-singapore {width: 100%;font-size: 12px;text-align: left;}
+.logo-foundation {width: 100%;font-size: 12px;text-align: right;}
+.logo-wildlife {width: 100%;font-size: 32px;text-align: center;font-weight: 1000;}
+
+
+.item {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
 .slogo,.blogo {
     display: inline-block;
     font-family: 'alice', serif;
@@ -45,6 +88,8 @@ header {
     display: flex;
     flex-direction: row;
     height: auto;
+    background: url("../images/tiger.jpg") center;
+    background-size: cover;
     width: calc(100% - 80px);
     background-color: #30011e;
     justify-content: space-between;
@@ -58,6 +103,8 @@ header {
     background-size: cover;
     height: 70vh;
 }
+
+
 .logo-scrolled {
     padding: 13vh 0 0 8vw;
 }
@@ -65,7 +112,7 @@ body {
     height: 1000px;
 }
 
-
+*/
 
 /*
 header {
