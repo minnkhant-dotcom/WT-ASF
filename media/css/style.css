@@ -22,24 +22,37 @@ colors:
     src: url(../fonts/figtree.ttf);
 }
 
+a {text-decoration: none;}
+body {
+    height: 10000px
+}
 header {
     display: flex;
-    position: fixed;
 
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 
-    height: 70vh;
+    height: 90vh;
     width: 100%;
     padding: 5vh 0 0 0;
+    border-radius: 0 0 35px 35px;
 
     background: url("../images/orangutan.jpg") center;
     background-size: cover;
 }
+.header-scrolled {
+    height: 20vh;
+    position: fixed;
+}
 
-/* logo */
 .logo{
     cursor: pointer;
+
+    padding: 20px 30vw 20px 30vw;
+    border-radius: 20px;
+
+    background-color: #30011e;
     text-decoration: none;
     transition: 0.2s;
     font-family: 'alice', serif;
@@ -49,19 +62,64 @@ header {
 .logo-foundation {width: 100%;font-size: 12px;text-align: right;}
 .logo-wildlife {width: 100%;font-size: 32px;text-align: center;font-weight: 1000;}
 
-
-.item {
+.navBar a:not(:first-child) {
     display: none;
 }
+.navBarNot {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #eefff4;
+    padding: 1.5vh;
+    margin: 3vh;
+    color: #30011e;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+.navItem, .icon {
+    display: block;
+    text-align: center;
+    font-family: "figtree", sans-serif;
+    transition: 0.2s;
+}
+.icon {
+    margin-top: 2vh;
+    background-color: #eefff4;
+    border-radius: 30px;
+    padding: 0px 10px 10px 10px;
+    font-size: 30px;
+}
+.navItem {
+    padding: 1vh;
+    margin: 0.5vh;
+    color: #30011e;
+    background-color: rgba(208, 254, 224, 0.5);
+    border-radius: 30px;
+}
 
+.home-info-display {
+    display: flex;flex-direction: column;justify-content: end;
+    flex: 1;
+    text-align: center;
+}
+p {
+    display: block;
+    padding: 3vh;
+    border-radius: 0 0 30px 30px;
+    background-color: #30011e;
+    font-family: "figtree", sans-serif;
+    font-size: 18px;
+    color: #eefff4;
+}
+.emph {
+    font-family: "alice", serif;
+    color: #ffcc00;
+    font-weight: 1000;
+}
 
-
-
-
-
-
-
-
+.gone {
+    display: none;
+}
 
 
 /*
