@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/media/css/styles.css">
+    <script src="/media/js/jquery-3.7.1.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/media/js/script.js"></script>
+    <script src="/media/js/htmx.min.js"></script>
+
+    <title>SWF - Animals</title>
+    <meta name="author" content="Minn Khant">
+    <meta name="description" content="Stay updated on upcoming events at the Singapore Wildlife Foundation. Join us for exciting wildlife experiences, educational programs, and conservation initiatives designed to inspire and engage all ages in protecting our natural world.">
+    <meta name="keywords" content="
+        Singapore Wildlife Foundation, Singapore Zoo, Jurong Bird Park, Singapore wildlife attractions, Singapore animal conservation, Wildlife parks Singapore, Singapore wildlife sanctuary, Singapore nature attractions, Singapore animal parks, Singapore conservation center, Singapore wildlife experience, Singapore animal encounters, Singapore bird sanctuary, Singapore wildlife tours, Singapore wildlife education, Singapore wildlife conservation, Singapore animal research center, Singapore biodiversity hub, Singapore wildlife preservation, Singapore endangered species protection, Singapore wildlife
+    ">
+
+    <style>
+        .event-banner {
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+        }
+        .event-card {
+            border-radius: 15px;
+        }
+    </style>
+
+</head>
+<body>
+    <header class="bg-success text-white py-3 text-center">
+        <div class="container">
+            <a href="/index.html" class="text-white h3 mb-0 logo">Singapore Wildlife Foundation</a>
+            <nav class="nav justify-content-center">
+                <a href="animals.html" class="nav-link">Animals</a>
+                <a href="conservation.html" class="nav-link">Conservation</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Header -->
+    <header class="text-center py-4">
+        <h1>Upcoming Events</h1>
+        <p>Join us in our conservation efforts by participating in our exciting events and programs.</p>
+    </header>
+
+    <!-- Event Banner Carousel (Optional for Featured Events) -->
+    <div id="eventCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="event-banner" style="background-image: url('https://via.placeholder.com/1200x600');">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Wildlife Conservation Talk</h5>
+                        <p>Join experts for an insightful discussion on wildlife conservation efforts.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="event-banner" style="background-image: url('https://via.placeholder.com/1200x600');">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Zoo Night Adventure</h5>
+                        <p>Explore the zoo at night with exclusive behind-the-scenes tours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Event Cards Section -->
+    <div class="container">
+        <h2 class="mb-4 text-center">Upcoming Events</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- Event 1 -->
+            <div class="col">
+                <div class="card event-card">
+                    <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Event Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Nature Walk and Talk</h5>
+                        <p class="card-text">Join us for a guided walk through the park with an expert guide.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Event 2 -->
+            <div class="col">
+                <div class="card event-card">
+                    <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Event Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Animal Photography Workshop</h5>
+                        <p class="card-text">A hands-on workshop to help you capture wildlife moments like a pro.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Event 3 -->
+            <div class="col">
+                <div class="card event-card">
+                    <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Event Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Wildlife Rehabilitation Tour</h5>
+                        <p class="card-text">See how we rehabilitate and care for injured wildlife at our center.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (From Landing Page) -->
+    <footer class="text-center py-4 mt-5">
+        <p>&copy; 2024 Singapore Wildlife Foundation | <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a></p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

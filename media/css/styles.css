@@ -1,6 +1,10 @@
 *::-webkit-scrollbar{
     display: none;
 }
+@font-face {
+    font-family: "alice";
+    src: url(../fonts/alice.ttf);
+}
  
 /* Header background with placeholder image */
 .header {
@@ -12,6 +16,7 @@
 
 /* Logo Styling */
 .logo {
+    font-family: "alice", serif;
     font-size: 2.5rem;
     font-weight: bold;
     color: #fff;
@@ -22,7 +27,6 @@
 .nav-link {
     color: #000;
     font-weight: bold;
-    text-transform: uppercase;
 }
 
 /* Blurb Styling */
@@ -37,4 +41,14 @@
 .newsletter-label {
     font-weight: bold;
     color: #228B22;
+}
+
+/* Logo and nav styling */
+a.text-white {
+    text-decoration: none;
+}
+/* Video container with max width */
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
 }

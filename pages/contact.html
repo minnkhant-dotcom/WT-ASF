@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/media/css/styles.css">
+    <script src="/media/js/jquery-3.7.1.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/media/js/script.js"></script>
+    <script src="/media/js/htmx.min.js"></script>
+
+    <title>SWF - Animals</title>
+    <meta name="author" content="Minn Khant">
+    <meta name="description" content="Get in touch with the Singapore Wildlife Foundation. Whether you have questions, want to learn more about our conservation work, or are interested in supporting our mission, we’re here to help. Connect with us today!">
+    <meta name="keywords" content="
+        Singapore Wildlife Foundation, Singapore Zoo, Jurong Bird Park, Singapore wildlife attractions, Singapore animal conservation, Wildlife parks Singapore, Singapore wildlife sanctuary, Singapore nature attractions, Singapore animal parks, Singapore conservation center, Singapore wildlife experience, Singapore animal encounters, Singapore bird sanctuary, Singapore wildlife tours, Singapore wildlife education, Singapore wildlife conservation, Singapore animal research center, Singapore biodiversity hub, Singapore wildlife preservation, Singapore endangered species protection, Singapore wildlife
+    ">
+
+    <style>
+        .accordion-button:focus {
+          outline: none;
+          box-shadow: none;
+        }
+        .contact-header {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        .contact-form input, .contact-form textarea {
+            border-radius: 15px;
+        }
+        .contact-info {
+            font-size: 0.9rem;
+        }
+        .faq-section {
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-success text-white py-3 text-center">
+        <div class="container">
+            <a href="/index.html" class="text-white h3 mb-0 logo">Singapore Wildlife Foundation</a>
+            <nav class="nav justify-content-center">
+                <a href="animals.html" class="nav-link">Animals</a>
+                <a href="conservation.html" class="nav-link">Conservation</a>
+                <a href="events.html" class="nav-link">Events</a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Contact Form Section -->
+    <div class="container">
+        <header class="text-center contact-header">
+            <h1>Contact Us</h1>
+            <p>We’d love to hear from you! Please fill out the form below with any questions or feedback.</p>
+        </header>
+
+        <!-- Contact Form -->
+        <h2 class="text-center mb-4">Send Us a Message</h2>
+        <form class="contact-form">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </div>
+        </form>
+
+        <!-- FAQ Section (Accordion) -->
+        <div class="faq-section">
+            <h3 class="text-center mb-4">Frequently Asked Questions</h3>
+
+            <div class="accordion" id="accordionExample">
+                <!-- Accordion Item 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            What is the Singapore Wildlife Foundation?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            The Singapore Wildlife Foundation (SWF) is dedicated to the protection and conservation of wildlife in Singapore. Our mission is to educate the public and drive conservation efforts for local and global wildlife species.
+                        </div>
+                    </div>
+                </div>
+                <!-- Accordion Item 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How can I contribute to the Singapore Wildlife Foundation?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            You can contribute by donating, volunteering, or simply spreading awareness about wildlife conservation. For more information, visit our donate or volunteer pages.
+                        </div>
+                    </div>
+                </div>
+                <!-- Accordion Item 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Where can I learn more about wildlife in Singapore?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            You can explore our website for various articles, research papers, and information about the local wildlife species. You can also visit the wildlife reserves and exhibitions across Singapore.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer (Contact Info) -->
+    <footer class="text-center py-4 mt-5 contact-info">
+        <p>&copy; 2024 Singapore Wildlife Foundation | <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a></p>
+        <p>Email: info@singaporewildlifefoundation.com | Phone: +65 1234 5678</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/media/css/styles.css">
+    <script src="/media/js/jquery-3.7.1.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/media/js/script.js"></script>
+    <script src="/media/js/htmx.min.js"></script>
+
+    <title>SWF - Conservation</title>
+    <meta name="author" content="Minn Khant">
+    <meta name="description" content="Explore our conservation efforts at the Singapore Wildlife Foundation, where we focus on scientific research, environmental sustainability, and education. Discover articles, projects, and resources dedicated to preserving wildlife and promoting sustainable practices. Join us in making a difference for our planet's future.">
+    <meta name="keywords" content="
+        Singapore Wildlife Foundation, Singapore Zoo, Jurong Bird Park, Singapore wildlife attractions, Singapore animal conservation, Wildlife parks Singapore, Singapore wildlife sanctuary, Singapore nature attractions, Singapore animal parks, Singapore conservation center, Singapore wildlife experience, Singapore animal encounters, Singapore bird sanctuary, Singapore wildlife tours, Singapore wildlife education, Singapore wildlife conservation, Singapore animal research center, Singapore biodiversity hub, Singapore wildlife preservation, Singapore endangered species protection, Singapore wildlife
+    ">
+
+    <style>
+        /* Navigation Bubble Styling */
+        .nav-bubble {
+            background-color: #f0f0f0;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+        }
+        .nav-link {
+            font-size: 0.9rem;
+        }
+        .nav-link.active {
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+        }
+        
+        /* Rounded Article Styling */
+        .article-card {
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            padding: 15px;
+            margin-bottom: 10px;
+            transition: transform 0.2s;
+            overflow: hidden;
+            background-color: #fafafa;
+        }
+        .article-card:hover {
+            transform: scale(1.02);
+        }
+    </style>
+
+</head>
+<body>
+    <header class="bg-success text-white py-3 text-center">
+        <div class="container">
+            <a href="/index.html" class="text-white h3 mb-0 logo">Singapore Wildlife Foundation</a>
+            <nav class="nav justify-content-center">
+                <a href="animals.html" class="nav-link">Animals</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="text-center py-4">
+        <h1>Explore Our Conservation Efforts</h1>
+        <p>Discover our ongoing work in wildlife preservation, sustainability initiatives, and educational outreach.</p>
+    </div>
+
+    <div class="container my-4 video-container">
+        <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/e-yAO267tvE" 
+                    title="YouTube video player" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <!-- Responsive Bubble Navigation for Sections -->
+    <div class="d-flex justify-content-center mb-4">
+        <div class="nav nav-pills nav-bubble" id="conservation-tab" role="tablist">
+            <button class="nav-link active" id="papers-tab" data-bs-toggle="tab" data-bs-target="#papers" type="button" role="tab">Scientific Papers</button>
+            <button class="nav-link" id="sustainability-tab" data-bs-toggle="tab" data-bs-target="#sustainability" type="button" role="tab">Environmental Sustainability</button>
+            <button class="nav-link" id="education-tab" data-bs-toggle="tab" data-bs-target="#education" type="button" role="tab">Education</button>
+        </div>
+    </div>
+
+    <!-- Content Sections with Rounded Articles -->
+    <div class="tab-content container" id="conservation-tabContent">
+        <!-- Scientific Papers Section -->
+        <div class="tab-pane fade show active" id="papers" role="tabpanel">
+            <div class="article-card">
+                <h4>Conservation Biology: Recent Advances</h4>
+                <p>A detailed analysis of new methods and techniques in conservation biology aimed at protecting biodiversity.</p>
+                <a href="#" class="btn btn-link">Read More</a>
+            </div>
+            <div class="article-card">
+                <h4>Marine Conservation Strategies</h4>
+                <p>An overview of effective strategies used to protect marine life and habitats.</p>
+                <a href="#" class="btn btn-link">Read More</a>
+            </div>
+        </div>
+
+        <!-- Environmental Sustainability Section -->
+        <div class="tab-pane fade" id="sustainability" role="tabpanel">
+            <div class="article-card">
+                <h4>Sustainable Practices in Urban Settings</h4>
+                <p>Exploring methods to make urban spaces more eco-friendly and sustainable.</p>
+                <a href="#" class="btn btn-link">Read More</a>
+            </div>
+            <div class="article-card">
+                <h4>Renewable Energy and Wildlife</h4>
+                <p>The impact of renewable energy practices on wildlife and natural habitats.</p>
+                <a href="#" class="btn btn-link">Read More</a>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <div class="tab-pane fade" id="education" role="tabpanel">
+            <div class="article-card">
+                <h4>Wildlife Conservation for Kids</h4>
+                <p>Educational materials designed to engage young minds in wildlife conservation.</p>
+                <a href="#" class="btn btn-link">Read More</a>
+            </div>
+            <div class="article-card">
+                <h4>Conservation and Career Paths</h4>
+                <p>A guide for students interested in pursuing a career in conservation and environmental sciences.</p>
+                <a href="#" class="btn btn-link">Read More</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
