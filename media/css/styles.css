@@ -5,7 +5,7 @@
     font-family: "alice";
     src: url(../fonts/alice.ttf);
 }
- 
+
 /* Header background with placeholder image */
 .header {
     background: url('../images/gorilla.jpg') no-repeat center center;
@@ -52,3 +52,68 @@ a.text-white {
     max-width: 800px;
     margin: 0 auto;
 }
+
+
+
+/* Single bubble-style background */
+.nav-bubble {
+    background-color: #f0f0f0;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+}
+.nav-link.active {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
+/* Remove underline from links */
+.nav-link, .nav-link:hover {
+    text-decoration: none;
+}
+
+
+
+/* Rounded Article Styling */
+.article-card {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: transform 0.2s;
+    overflow: hidden;
+    background-color: #fafafa;
+}
+.article-card:hover {
+    transform: scale(1.02);
+}
+
+
+
+.event-banner {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+.event-card {
+    border-radius: 15px;
+}
+
+
+
+.accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .contact-header {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+  }
+  .contact-form input, .contact-form textarea {
+      border-radius: 15px;
+  }
+  .contact-info {
+      font-size: 0.9rem;
+  }
+  .faq-section {
+      margin-top: 3rem;
+  }

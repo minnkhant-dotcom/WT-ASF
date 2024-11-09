@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="/media/css/styles.css">
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/media/js/jquery-3.7.1.min.js"></script>
     <script src="/media/js/script.js"></script>
     <script src="/media/js/htmx.min.js"></script>
@@ -87,15 +87,5 @@
         </div>
     </footer>
 
-    <script>
-        $(document).ready(function () {
-            $('#newsletter-form').on('submit', function (e) {
-                e.preventDefault();
-                alert("Thank you for subscribing to our newsletter!");
-                $('#name').val('');
-                $('#email').val('');
-            });
-        });
-    </script>
 </body>
 </html>
