@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="/media/css/styles.css">
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/media/js/jquery-3.7.1.min.js"></script>
-    <script src="/media/js/script.js"></script>
-    <script src="/media/js/htmx.min.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="media/css/styles.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="media/js/jquery-3.7.1.min.js"></script>
+    <script src="media/js/script.js"></script>
+    <script src="media/js/htmx.min.js"></script>
 
     <title>Singapore Wildlife Foundation</title>
     <meta name="author" content="Minn Khant">
@@ -20,48 +20,46 @@
 
 
 <body>
-    <!-- Header Section with Logo and Navigation -->
+    <!-- Header Section -->
     <header class="header">
         <div class="container">
             <div class="row justify-content-center">
                 <!-- Logo -->
-                <div class="col-12 logo">Singapore Wildlife Foundation</div>
+                <div class="col-12 logo" style="background-color: rgba(0,54,0,0.2);">Singapore Wildlife Foundation</div>
             </div>
         </div>
     </header>
     
-    <!-- Main Content Section -->
     <div class="container py-5">
         <div class="row align-items-start justify-content-center">
-            <!-- Navigation for all screens -->
+            <!-- Navigation Bar -->
             <div class="col-12 col-md-3 col-xl-2 order-2 order-md-1 text-center">
-                <nav class="nav flex-md-column justify-content-center" style="background-color: aqua;">
-                    <a href="/pages/animals.html" class="nav-link">Animals</a>
-                    <a href="/pages/conservation.html" class="nav-link">Conservation</a>
-                    <a href="/pages/events.html" class="nav-link">Events</a>
-                    <a href="/pages/contact.html" class="nav-link">Contact</a>
+                <nav class="nav flex-md-column justify-content-center" style="background-color: #003400; border-radius: 5%;">
+                    <a href="pages/animals.html" class="nav-link">Animals</a>
+                    <a href="pages/conservation.html" class="nav-link">Conservation</a>
+                    <a href="pages/events.html" class="nav-link">Events</a>
+                    <a href="pages/contact.html" class="nav-link">Contact</a>
                 </nav>
             </div>
-
-            <!-- Blurb Section -->
+            <!-- Blurb for information -->
             <div class="col-12 col-md-8 col-xl-6 blurb order-1 order-md-2">
-                <p>Welcome to the Singapore Wildlife Foundation, the union of Singapore's most iconic wildlife attractions - the Singapore Zoo and Jurong Bird Park. Our mission is to preserve and celebrate biodiversity in Southeast Asia and beyond.</p>
+                <p>Welcome to the Singapore Wildlife Foundation, the unifying force behind Singapore's most iconic wildlife sanctuaries – the Singapore Zoo and Jurong Bird Park. Dedicated to the preservation and celebration of biodiversity in Southeast Asia and beyond, we bring together a passionate team of conservationists, scientists, and wildlife enthusiasts committed to protecting endangered species and educating the public. Through immersive wildlife experiences and pioneering conservation programs, we aim to foster a deeper connection to nature, inspiring action to protect our planet's rich and fragile ecosystems for generations to come.</p>
             </div>
         </div>
 
-        <!-- Newsletter Form (appears after main content on all screens) -->
+        <!-- Newsletter Form -->
         <div class="row justify-content-center mt-5">
             <div class="col-md-6 col-lg-4">
                 <form id="newsletter-form">
                     <div class="mb-3">
-                        <label for="name" class="form-label newsletter-label">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        <label for="name" class="form-label newsletter-label" id="name">Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your name" required>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label newsletter-label">Email</label>
                         <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
                     </div>
-                    <button type="submit" class="btn btn-success w-100">Subscribe to our newsletter!</button>
+                    <button type="submit" class="btn w-100">Subscribe to our newsletter!</button>
                 </form>
             </div>
         </div>
@@ -71,16 +69,18 @@
     <footer class="footer bg-light py-4 mt-5">
         <div class="container text-center">
             <p class="mb-1">&copy; 2024 Singapore Wildlife Foundation. All rights reserved.</p>
+            <p class="mb-1">A <strong>S1036901 - Minn Khant</strong> Production</p>
             
             <!-- Contact Information -->
             <div class="contact-info" id="contact-info">
-                <p class="mb-0"><strong>Email:</strong> <a href="mailto:itsminnkhant@gmail.com">info@sgwildlife.org</a> | support@sgwildlife.org</p>
-                <p class="mb-0"><strong>Phone:</strong> +65 6123 4567 | +65 6890 1234</p>
+                <p class="mb-0"><strong>Email:</strong> <a href="mailto:itsminnkhant@gmail.com">itsminnkhant@gmail.com</a> | <a href="mailto:bjmk06@gmail.com">info@sgwildlife.org</a></p>
+                <p class="mb-0"><strong>Phone:</strong> +65 9455 4951 | +65 6123 4567 </p>
+                <p class="mb-0"><strong>Social media: <a href="#">Facebook</a> <a href="#">Instagram</a></p>
             </div>
 
             <!-- Contact Us Button as a Link to Another Page -->
             <p class="mt-3">
-                <a href="/pages/contact.html" class="btn btn-outline-success btn-sm">
+                <a href="pages/contact.html" class="btn btn-sm">
                     Contact Us
                 </a>
             </p>

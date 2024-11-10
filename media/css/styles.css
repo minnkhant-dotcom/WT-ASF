@@ -5,27 +5,48 @@
     font-family: "alice";
     src: url(../fonts/alice.ttf);
 }
+@font-face {
+    font-family: "figtree";
+    src: url(../fonts/figtree.ttf);
+}
+* {
+    font-family: "figtree", sans-serif;
+}
+
+a:hover {
+    color: #a91101;
+    text-decoration: none;
+}
 
 /* Header background with placeholder image */
 .header {
     background: url('../images/gorilla.jpg') no-repeat center center;
     background-size: cover;
     padding: 3rem 0;
-    color: #fff;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays above other content */
+    width: 100%;
+    background-color: #003400;
+    border-radius: 0 0 5% 5%;
 }
 
 /* Logo Styling */
 .logo {
+    cursor: pointer;
     font-family: "alice", serif;
     font-size: 2.5rem;
     font-weight: bold;
-    color: #fff;
+    color: #fff9fb;
     text-align: center;
 }
 
 /* Navigation Styling */
 .nav-link {
-    color: #000;
+    color: #fff9fb;
     font-weight: bold;
 }
 
@@ -40,7 +61,7 @@
 /* Newsletter Label Styling */
 .newsletter-label {
     font-weight: bold;
-    color: #228B22;
+    color: #003400;
 }
 
 /* Logo and nav styling */
@@ -52,23 +73,36 @@ a.text-white {
     max-width: 800px;
     margin: 0 auto;
 }
-
+.btn {
+    background-color: #003400;
+    color: #fff9fb;
+}
 
 
 /* Single bubble-style background */
 .nav-bubble {
-    background-color: #f0f0f0;
+    background-color: #003400;
     padding: 0.5rem 1rem;
     border-radius: 50px;
 }
 .nav-link.active {
-    background-color: #007bff;
+    background-color: #a91101;
     color: #fff;
     border-radius: 5px;
 }
-/* Remove underline from links */
-.nav-link, .nav-link:hover {
+.nav-link {
+    color: #fff9fb;
     text-decoration: none;
+}
+.nav-link:hover{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #a91101;
+}
+@media (max-width: 576px) {
+    #conservation-tab button {
+        margin: 10px 0px 10px 0px
+    }
 }
 
 

@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="/media/css/styles.css">
-    <script src="/media/js/jquery-3.7.1.min.js"></script>
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/media/js/script.js"></script>
-    <script src="/media/js/htmx.min.js"></script>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../media/css/styles.css">
+    <script src="../media/js/jquery-3.7.1.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../media/js/script.js"></script>
+    <script src="../media/js/htmx.min.js"></script>
 
     <title>SWF - Animals</title>
     <meta name="author" content="Minn Khant">
@@ -19,16 +19,16 @@
     ">
 </head>
 <body>
-    <header class="bg-success text-white py-3 text-center">
+    <header class="text-white py-3 text-center sticky-header">
         <div class="container">
-            <a href="/index.html" class="text-white h3 mb-0 logo">Singapore Wildlife Foundation</a>
+            <div class="text-white h3 mb-0 logo">Singapore Wildlife Foundation</div>
             <nav class="nav justify-content-center">
+                <a href="animals.html" class="nav-link">Animals</a>
                 <a href="conservation.html" class="nav-link">Conservation</a>
                 <a href="events.html" class="nav-link">Events</a>
-                <a href="contact.html" class="nav-link">Contact</a>
             </nav>
         </div>
-    </header>
+    </header> 
 
     <!-- Page Header -->
     <div class="text-center py-4">
@@ -39,89 +39,305 @@
     <!-- Bubble Navigation for Sections -->
     <div class="d-flex justify-content-center mb-4">
         <div class="nav nav-pills nav-bubble" id="animals-tab" role="tablist">
-            <button class="nav-link active" id="mammals-tab" data-bs-toggle="tab" data-bs-target="#mammals" type="button" role="tab">Mammals</button>
-            <button class="nav-link" id="birds-tab" data-bs-toggle="tab" data-bs-target="#birds" type="button" role="tab">Birds</button>
-            <button class="nav-link" id="reptiles-tab" data-bs-toggle="tab" data-bs-target="#reptiles" type="button" role="tab">Reptiles</button>
+            <button class="nav-link active" id="land-tab" data-bs-toggle="tab" data-bs-target="#mammals" type="button" role="tab">Land</button>
+            <button class="nav-link" id="sky-tab" data-bs-toggle="tab" data-bs-target="#birds" type="button" role="tab">Sky</button>
+            <button class="nav-link" id="waters-tab" data-bs-toggle="tab" data-bs-target="#reptiles" type="button" role="tab">Waters</button>
         </div>
     </div>
 
     <!-- Content Sections with Cards -->
     <div class="tab-content container" id="animals-tabContent">
-        <!-- Mammals Section -->
+        <!-- Land Section -->
         <div class="tab-pane fade show active" id="mammals" role="tabpanel">
             <div class="row">
                 <div class="col-sm-6 col-lg-4 mb-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Tiger">
+                        <a href="https://en.wikipedia.org/wiki/Siberian_tiger" target="_blank">
+                            <img src="../media/images/siberian-tiger.jpg" class="card-img-top" alt="Siberian Tiger">
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">Tiger</h5>
-                            <p class="card-text">The tiger is a majestic carnivore known for its strength and striped fur.</p>
-                            <a href="https://en.wikipedia.org/wiki/Tiger" class="btn btn-primary" target="_blank">Learn More</a>
+                            <h5 class="card-title">Siberian Tiger</h5>
+                            <p class="card-text">The Siberian tiger, also known as the Amur tiger, is a subspecies native to the Russian Far East.</p>
                         </div>
                     </div>
                 </div>
+                
                 <div class="col-sm-6 col-lg-4 mb-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Elephant">
+                        <a href="https://en.wikipedia.org/wiki/Asian_Elephant" target="_blank">
+                            <img src="../media/images/asian-elephant.jpg" class="card-img-top" alt="Asian Elephant">
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">Elephant</h5>
-                            <p class="card-text">Elephants are the largest land animals, known for their intelligence and social structures.</p>
-                            <a href="https://en.wikipedia.org/wiki/Elephant" class="btn btn-primary" target="_blank">Learn More</a>
+                            <h5 class="card-title">Asian Elephant</h5>
+                            <p class="card-text">The Asian elephant is smaller than its African cousin and found primarily in the Indian subcontinent and Southeast Asia.</p>
                         </div>
                     </div>
                 </div>
+                
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <a href="https://en.wikipedia.org/wiki/Orangutan" target="_blank">
+                            <img src="../media/images/orangutan.jpg" class="card-img-top" alt="Orangutan">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Orangutan</h5>
+                            <p class="card-text">The orangutan is a large ape found in the rainforests of Borneo and Sumatra, known for their intelligence and orange-red fur.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <a href="https://en.wikipedia.org/wiki/Komodo_dragon" target="_blank">
+                            <img src="../media/images/komodo-dragon.jpg" class="card-img-top" alt="Komodo Dragon">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Komodo Dragon</h5>
+                            <p class="card-text">The Komodo dragon is the largest living lizard, native to the islands of Indonesia, known for its powerful bite and venom.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <a href="https://en.wikipedia.org/wiki/Red_Panda" target="_blank">
+                            <img src="../media/images/red-panda.jpg" class="card-img-top" alt="Red Panda">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Red Panda</h5>
+                            <p class="card-text">The red panda, also known as the fire fox, is a small mammal found in the eastern Himalayas and southwestern China.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <a href="https://en.wikipedia.org/wiki/Wolverine" target="_blank">
+                            <img src="../media/images/wolverine.jpg" class="card-img-top" alt="Wolverine">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Wolverine</h5>
+                            <p class="card-text">The wolverine is a fierce carnivore found in the northern latitudes of North America, Europe, and Asia.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <a href="https://en.wikipedia.org/wiki/Okapi" target="_blank">
+                            <img src="../media/images/okapi.jpg" class="card-img-top" alt="Okapi">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Okapi</h5>
+                            <p class="card-text">The okapi, native to the rainforests of the Democratic Republic of Congo, is a close relative of the giraffe but has a zebra-like appearance.</p>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
 
-        <!-- Birds Section -->
+        <!-- Sky Section -->
         <div class="tab-pane fade" id="birds" role="tabpanel">
             <div class="row">
                 <div class="col-sm-6 col-lg-4 mb-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Parrot">
+                        <a href="https://en.wikipedia.org/wiki/Harpy_Eagle" target="_blank">
+                            <img src="../media/images/harpy-eagle.jpg" class="card-img-top" alt="Harpy Eagle">
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">Parrot</h5>
-                            <p class="card-text">Parrots are colorful, intelligent birds, famous for their mimicry skills.</p>
-                            <a href="https://en.wikipedia.org/wiki/Parrot" class="btn btn-primary" target="_blank">Learn More</a>
+                            <h5 class="card-title">Harpy Eagle</h5>
+                            <p class="card-text">The harpy eagle is a large, powerful bird of prey found in the tropical rainforests of Central and South America.</p>
                         </div>
                     </div>
                 </div>
+                
                 <div class="col-sm-6 col-lg-4 mb-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Flamingo">
+                        <a href="https://en.wikipedia.org/wiki/Peregrine_falcon" target="_blank">
+                            <img src="../media/images/peregrine-falcon.jpg" class="card-img-top" alt="Peregrine Falcon">
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">Flamingo</h5>
-                            <p class="card-text">Flamingos are known for their pink feathers and unique one-legged stance.</p>
-                            <a href="https://en.wikipedia.org/wiki/Flamingo" class="btn btn-primary" target="_blank">Learn More</a>
+                            <h5 class="card-title">Peregrine Falcon</h5>
+                            <p class="card-text">Known as the fastest bird, the peregrine falcon can reach speeds over 240 mph while diving to catch prey.</p>
                         </div>
                     </div>
                 </div>
+                
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <a href="https://en.wikipedia.org/wiki/California_condor" target="_blank">
+                            <img src="../media/images/california-condor.jpg" class="card-img-top" alt="California Condor">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">California Condor</h5>
+                            <p class="card-text">The California condor is one of the largest flying birds in North America, known for its massive wingspan and conservation efforts.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <a href="https://en.wikipedia.org/wiki/Great_Horned_Owl" target="_blank">
+                            <img src="../media/images/great-horned-owl.jpg" class="card-img-top" alt="Great Horned Owl">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Great Horned Owl</h5>
+                            <p class="card-text">The great horned owl is a large and powerful nocturnal bird of prey, known for its distinctive ear tufts and hooting call.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <a href="https://en.wikipedia.org/wiki/Scarlet_macaw" target="_blank">
+                            <img src="../media/images/scarlet-macaw.jpg" class="card-img-top" alt="Scarlet Macaw">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Scarlet Macaw</h5>
+                            <p class="card-text">The scarlet macaw is a vibrant and intelligent parrot species, native to the rainforests of Central and South America.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <a href="https://en.wikipedia.org/wiki/Quetzal" target="_blank">
+                            <img src="../media/images/quetzal.jpg" class="card-img-top" alt="Quetzal">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Quetzal</h5>
+                            <p class="card-text">The quetzal is a brilliantly colored bird, native to Central America, revered for its stunning feathers and cultural significance.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <a href="https://en.wikipedia.org/wiki/Andean_condor" target="_blank">
+                            <img src="../media/images/andean-condor.jpg" class="card-img-top" alt="Andean Condor">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Andean Condor</h5>
+                            <p class="card-text">The Andean condor is a large vulture native to South America, known for its impressive wingspan and soaring abilities.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <a href="https://en.wikipedia.org/wiki/Kea_(bird)" target="_blank">
+                            <img src="../media/images/kea.jpg" class="card-img-top" alt="Kea">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Kea</h5>
+                            <p class="card-text">The kea is a large, intelligent parrot native to New Zealand, known for its curiosity and playful nature, as well as its ability to solve complex problems.</p>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
 
-        <!-- Reptiles Section -->
+        <!-- Waters Section -->
         <div class="tab-pane fade" id="reptiles" role="tabpanel">
             <div class="row">
                 <div class="col-sm-6 col-lg-4 mb-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Crocodile">
+                        <a href="https://en.wikipedia.org/wiki/Manatee" target="_blank">
+                            <img src="../media/images/manatee.jpg" class="card-img-top" alt="Manatee">
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">Crocodile</h5>
-                            <p class="card-text">Crocodiles are large reptiles known for their powerful jaws and aquatic lifestyle.</p>
-                            <a href="https://en.wikipedia.org/wiki/Crocodile" class="btn btn-primary" target="_blank">Learn More</a>
+                            <h5 class="card-title">Manatee</h5>
+                            <p class="card-text">Manatees, also known as sea cows, are large, slow-moving herbivores that live in warm coastal waters and freshwater rivers.</p>
                         </div>
                     </div>
                 </div>
+                
                 <div class="col-sm-6 col-lg-4 mb-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Python">
+                        <a href="https://en.wikipedia.org/wiki/Nile_crocodile" target="_blank">
+                            <img src="../media/images/nile-crocodile.jpg" class="card-img-top" alt="Nile Crocodile">
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">Python</h5>
-                            <p class="card-text">Pythons are large non-venomous snakes that constrict their prey.</p>
-                            <a href="https://en.wikipedia.org/wiki/Python_(genus)" class="btn btn-primary" target="_blank">Learn More</a>
+                            <h5 class="card-title">Nile Crocodile</h5>
+                            <p class="card-text">The Nile crocodile is a large reptile native to Africa, known for its powerful jaws and as one of the most dangerous predators in the region.</p>
                         </div>
                     </div>
                 </div>
+                
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <a href="https://en.wikipedia.org/wiki/Manta_ray" target="_blank">
+                            <img src="../media/images/manta-ray.jpg" class="card-img-top" alt="Manta Ray">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Manta Ray</h5>
+                            <p class="card-text">Manta rays are large, graceful oceanic creatures known for their wide, triangular pectoral fins and their ability to glide effortlessly through the water.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <a href="https://en.wikipedia.org/wiki/Orca" target="_blank">
+                            <img src="../media/images/orca.jpg" class="card-img-top" alt="Orca">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Orca</h5>
+                            <p class="card-text">Orcas, also known as killer whales, are highly social and intelligent apex predators, known for their coordinated hunting techniques.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <a href="https://en.wikipedia.org/wiki/Seahorse" target="_blank">
+                            <img src="../media/images/seahorse.jpg" class="card-img-top" alt="Seahorse">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Seahorse</h5>
+                            <p class="card-text">Seahorses are small marine fish known for their unique upright posture and the male's role in pregnancy.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <a href="https://en.wikipedia.org/wiki/Axolotl" target="_blank">
+                            <img src="../media/images/axolotl.jpg" class="card-img-top" alt="Axolotl">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Axolotl</h5>
+                            <p class="card-text">The axolotl, or Mexican walking fish, is an amphibian known for its regenerative abilities and its ability to retain larval features throughout life.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <a href="https://en.wikipedia.org/wiki/Green_sea_turtle" target="_blank">
+                            <img src="../media/images/green-sea-turtle.jpg" class="card-img-top" alt="Green Sea Turtle">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Green Sea Turtle</h5>
+                            <p class="card-text">The Green Sea Turtle is a large, herbivorous turtle found in tropical and subtropical oceans. Known for its greenish-colored fat, it is a vulnerable species.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <a href="https://en.wikipedia.org/wiki/Clownfish" target="_blank">
+                            <img src="../media/images/clownfish.jpg" class="card-img-top" alt="Clownfish">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Clownfish</h5>
+                            <p class="card-text">Clownfish are small, brightly colored fish known for their symbiotic relationship with sea anemones.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -129,16 +345,18 @@
     <footer class="footer bg-light py-4 mt-5">
         <div class="container text-center">
             <p class="mb-1">&copy; 2024 Singapore Wildlife Foundation. All rights reserved.</p>
+            <p class="mb-1">A <strong>S1036901 - Minn Khant</strong> Production</p>
             
             <!-- Contact Information -->
             <div class="contact-info" id="contact-info">
-                <p class="mb-0"><strong>Email:</strong> <a href="mailto:itsminnkhant@gmail.com">info@sgwildlife.org</a> | support@sgwildlife.org</p>
-                <p class="mb-0"><strong>Phone:</strong> +65 6123 4567 | +65 6890 1234</p>
+                <p class="mb-0"><strong>Email:</strong> <a href="mailto:itsminnkhant@gmail.com">itsminnkhant@gmail.com</a> | <a href="mailto:bjmk06@gmail.com">info@sgwildlife.org</a></p>
+                <p class="mb-0"><strong>Phone:</strong> +65 9455 4951 | +65 6123 4567 </p>
+                <p class="mb-0"><strong>Social media: <a href="#">Facebook</a> <a href="#">Instagram</a></p>
             </div>
 
             <!-- Contact Us Button as a Link to Another Page -->
             <p class="mt-3">
-                <a href="/pages/contact.html" class="btn btn-outline-success btn-sm">
+                <a href="contact.html" class="btn btn-sm">
                     Contact Us
                 </a>
             </p>
