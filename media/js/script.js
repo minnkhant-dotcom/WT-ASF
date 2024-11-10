@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $(".logo").click(function() {
-        window.location.href = "../index.html";
+        window.location.href = "index.html";
     });
 
     $('#newsletter-form').on('submit', function (e) {
